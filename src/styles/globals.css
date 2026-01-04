@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+
+  /* TEMA POR DEFECTO: MICROSOFT 365 (LIGHT) */
+  :root {
+    --brand-primary: #0078d4;
+    --brand-secondary: #2b88d8;
+    --bg-main: #f3f2f1;
+    --bg-card: #ffffff;
+    --text-main: #323130;
+    --text-muted: #605e5c;
+    --border-color: #e1dfdd;
+    --radius: 0px;
+    /* Estética recta de Microsoft */
+  }
+
+  /* TEMA: MICROSOFT 365 (DARK) */
+  [data-theme='ms-dark'] {
+    --brand-primary: #2899f5;
+    --bg-main: #11100f;
+    --bg-card: #252423;
+    --text-main: #ffffff;
+    --text-muted: #d2d0ce;
+    --border-color: #3b3a39;
+  }
+
+  /* TEMA: MODERN VIBRANT (Inspirado en Linear/SaaS moderno) */
+  [data-theme='vibrant-light'] {
+    --brand-primary: #6366f1;
+    /* Indigo */
+    --bg-main: #f9fafb;
+    --bg-card: #ffffff;
+    --text-main: #111827;
+    --border-color: #e5e7eb;
+    --radius: 8px;
+    /* Bordes redondeados */
+  }
+
+  /* TEMA: SAP GOLD (Inspirado en ERPs industriales) */
+  [data-theme='industrial-dark'] {
+    --brand-primary: #f0ab39;
+    --bg-main: #1a1a1a;
+    --bg-card: #2d2d2d;
+    --text-main: #e0e0e0;
+    --border-color: #404040;
+    --radius: 4px;
+  }
+}
